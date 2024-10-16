@@ -20,7 +20,9 @@ Tree of Nodes
     - CA
   - D
 ```
-Query `A or CA not D` should retreive all items in `A, AA, AAA, AB, CA` excluding the ones also in `B`
+Query `(A or CA) not D` should retreive all items in `(A or AA or AAA or AB or ABA or CA) and not B`
+
+Query `A and CA not D` should retrive all items in `CA and (A or AA or AAA or AB or ABA) and not B`
 
 
 ### References
